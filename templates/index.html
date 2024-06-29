@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Niranga">
+        <meta name="describetion" content = "Specialy for CIS students">
+        <title>2N Downloader</title>
+        <link rel="icon" href="11.jpeg" type = "image/x-icon">
+        <title><strong>Downloader</strong> </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+        <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+        </head>
+        <body>
+            <div id="container">
+                <h1>2N Downloader</h1>
+                <form id="download-form">
+                    <input type="url" name="url" placeholder="Enter YouTube URL" required>
+                    <select name="itag">
+                        <option value="18">360p</option>
+                        <option value="22">720p</option>
+                        <option value="37">1080p</option>
+                    </select>
+                    <button type="submit">Download</button>
+                    <p><a href="https://www.linkedin.com/in/niranga-nayanajith-548a0a302/" target="_blank"> <img src="{{ url_for('static', filename='2.png') }}" > </a><a href="https://web.facebook.com/niranga.nayanajith.31/" target="_blank"> <img src="{{ url_for('static', filename='3.png') }} " > </a> <a href="https://www.youtube.com/channel/UCAazRT0rB0lFw93jVmovluQ" target="_blank"> <img src="{{ url_for('static', filename='4.png') }}" > </a></p>
+                </form>
+            </div>
+            <div id="popup">
+                <div id="popup-content">
+                    <p id="status-text">Preparing download...</p>
+                    <div id="progress-bar"><div></div></div>
+                </div>
+            </div>
+            <script src="{{ url_for('static', filename='script.js') }}"></script>
+        </body>
+        </html>
+        
